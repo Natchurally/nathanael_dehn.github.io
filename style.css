@@ -3,7 +3,9 @@ body {
   line-height: 1.8;
   font-size: 20px;
   font-weight: 300;
-  margin: 50px;
+  margin: 0px;
+  padding-top: 80px;
+  display: block;
   }
 
 body .text-center {
@@ -11,6 +13,10 @@ body .text-center {
     }
 
   a {
+    color: #000;
+  }
+
+  a:hover {
     color: #65b144;
   }
 
@@ -32,26 +38,32 @@ body .text-center {
  }
 
  ::selection {
-     color: #fcfcfc;
+     color: #fff;
      background: #65b144;
- }
+   }
+
+.logo-img {
+  width: 100px;
+  height: auto;
+  }
 
  header .navi > ul li {
    list-style: none;
    display: inline-block;
-   margin: 20px;
+   margin: 50 20 50 20;
    font-size: 18px;
    text-decoration: none;
   }
   header .navi-logo {
      position: relative;
-     font-size: 50px;
+     font-size: 80px;
      color: #000;
      text-transform: uppercase;
-     font-weight: 700;
+     font-weight: 600;
      letter-spacing: 1px;
      text-decoration: none;
    }
+
   header .navi a {
      text-decoration: none;
     }
@@ -59,10 +71,24 @@ body .text-center {
   .dot::after {
     position: relative;;
     content: '';
-    top: -23px;
+    top: -26px;
     right: -8px;
     width: 0;
 	  height: 0;
-	  border-bottom: 8px solid #000;
-	  border-right: 8px solid transparent;
-  }
+	  border-bottom: 12px solid #65b144;
+	  border-right: 12px solid transparent;
+    margin-right: -12px;
+    }
+  .dot {
+    font-weight: 500;
+    }
+
+  ul, menu, dir {
+      display: block;
+      list-style-type: disc;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-start: 0px;
+    }
