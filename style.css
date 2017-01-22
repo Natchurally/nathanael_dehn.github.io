@@ -18,33 +18,63 @@ body .text-center {
 
   a:hover {
     color: #65b144;
+    }
+
+  p {
+    font-size: 20px;
   }
 
   h1 {
   color: #65b144;
-  font-size: 80px;
+  font-size: 100px;
   font-weight:bold;
   }
 
  h2 {
    color: #202020;
-   font-size: 60px;
+   font-size: 40px;
    font-weight: lighter;
  }
 
  h3 {
    color: #3D3D3D;
-   font-size: 20px;
+   font-size: 30px;
+   font-weight: lighter;
+ }
+
+ .button {
+     background-color: #65b144;
+     border: none;
+     color: #fff;
+     padding: 8px 25px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 20px;
+     cursor: pointer;
+     -webkit-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+     transition: all .2s ease-in-out;
+ }
+ .button:hover {
+   color: #fff;
+   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.22),
+   0 8px 12px 0 rgba(0,0,0,0.22);
+   transform: scale(1.05);
  }
 
  ::selection {
      color: #fff;
-     background: #65b144;
+     background: rgba(101, 176, 69, 0.8);
    }
 
 .logo-img {
   width: 100px;
   height: auto;
+  }
+  header .hpadding {
+    padding: 150 0 150 0;
+    background-color: #fff;
   }
 
  header .navi > ul li {
@@ -92,3 +122,16 @@ body .text-center {
       -webkit-margin-end: 0px;
       -webkit-padding-start: 0px;
     }
+
+    .parallax {
+        background-image: url(images/back.jpg);
+        min-height: 800px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0px;
+    }
+
+.spacer {
+  height: 1000px; }
