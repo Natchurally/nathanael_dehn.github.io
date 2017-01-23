@@ -8,7 +8,7 @@ body {
   display: block;
   }
 
-body .text-center {
+ .text-center {
     text-align: center;
     }
 
@@ -68,10 +68,17 @@ body .text-center {
      background: rgba(101, 176, 69, 0.8);
    }
 
+  img .grid-img {
+    max-width: 10%;
+    max-height: 10%;
+    background-repeat: no-repeat;
+}
+
 .logo-img {
   width: 100px;
   height: auto;
   }
+
   header .hpadding {
     padding: 150 0 150 0;
     background-color: #fff;
@@ -114,24 +121,48 @@ body .text-center {
     }
 
   ul, menu, dir {
-      display: block;
-      list-style-type: disc;
-      -webkit-margin-before: 1em;
-      -webkit-margin-after: 1em;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
-      -webkit-padding-start: 0px;
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
     }
 
-    .parallax {
-        background-image: url(images/back.jpg);
-        min-height: 800px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        top: 0px;
+  .parallax {
+    background-image: url(images/back.jpg);
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
     }
 
 .spacer {
   height: 1000px; }
+
+.spacer50 {
+    height: 50px;
+  }
+
+.flex-grid-3 {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-3 .col {
+  width: 33%;
+}
+.col {
+  text-align: center;
+  flex: 3;
+}
+
+.clear {
+  clear: both;
+}
+
+.footer {
+  clear:both;
+}
