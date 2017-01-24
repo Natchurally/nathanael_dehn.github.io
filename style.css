@@ -18,21 +18,36 @@ body {
     }
 
   a {
-    color: #000;
+    color: #727272;
   }
 
   a:hover {
     color: #65b144;
     }
 
+  a:hover, a:visited, a:link, a:active
+    {
+    text-decoration: none;
+    }
+
   p {
     font-size: 20px;
+    line-height: 27px;
+    color: #727272;
   }
+
+  .textblock {
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: left;
+  }
+
 
   h1 {
   color: #65b144;
   font-size: 100px;
-  font-weight:bold;
+  font-weight: bold;
+  line-height: 100px;
   }
 
  h2 {
@@ -137,7 +152,37 @@ body {
 
   .parallax {
     background-image: url(images/back.jpg);
-    min-height: 800px;
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    }
+
+  .parallax2 {
+    background-image: url(images/work.jpg);
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    }
+
+  .parallax3 {
+    background-image: url(images/about.jpg);
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    }
+
+  .parallax4 {
+    background-image: url(images/contact.jpg);
+    min-height: 900px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -151,6 +196,9 @@ body {
 .spacer50 {
     height: 50px;
   }
+.spacer100 {
+      height: 100px;
+    }
 
 .spacer150 {
     height: 150px;
@@ -175,6 +223,18 @@ body {
 .clear {
   clear: both;
 }
+
+.contactform {
+  font-size: 100px;
+  line-height: 100px;
+  color: #fff;
+  text-decoration: overline;
+}
+.contactform:hover {
+  color: #65b144;
+  text-decoration: line-through;
+}
+
 
 footer {
   background-image: url("images/footer.jpg");
