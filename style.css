@@ -100,7 +100,7 @@ body {
   }
 
   header .hpadding {
-    padding: 150 0 150 0;
+    padding: 80 0 80 0;
     background-color: #fff;
   }
 
@@ -182,7 +182,7 @@ body {
 
   .parallax4 {
     background-image: url(images/contact.jpg);
-    min-height: 900px;
+    min-height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
