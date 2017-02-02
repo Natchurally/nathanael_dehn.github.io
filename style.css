@@ -4,7 +4,7 @@ body {
   font-size: 20px;
   font-weight: 300;
   margin: 0px;
-  padding-top: 80px;
+  padding-top: 60px;
   display: block;
   }
 
@@ -12,6 +12,8 @@ body {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   }
+
+
 
  .text-center {
     text-align: center;
@@ -36,11 +38,11 @@ body {
     color: #727272;
   }
 
-  .textblock {
+  /*.textblock {
     padding-left: 150px;
     padding-right: 150px;
     text-align: left;
-  }
+  }*/
 
 
   h1 {
@@ -52,7 +54,7 @@ body {
 
  h2 {
    color: #202020;
-   font-size: 40px;
+   font-size: 30px;
    font-weight: lighter;
  }
 
@@ -61,6 +63,7 @@ body {
    font-size: 30px;
    font-weight: lighter;
  }
+
 
  .button {
      background-color: #65b144;
@@ -85,7 +88,7 @@ body {
 
  ::selection {
      color: #fff;
-     background: rgba(101, 176, 69, 0.8);
+     background: rgba(101, 176, 69, 0.7);
    }
 
  .grid-img {
@@ -136,6 +139,7 @@ body {
 	  border-right: 12px solid transparent;
     margin-right: -12px;
     }
+
   .dot {
     font-weight: 500;
     }
@@ -235,7 +239,6 @@ body {
   text-decoration: line-through;
 }
 
-
 footer {
   background-image: url("images/footer.jpg");
   background-position: bottom;
@@ -273,5 +276,100 @@ li {
 }
 
 .social-img:hover {
-  transform: scale(1.12);
+  transform: scale(1.15);
+}
+
+@media (min-width:769px) {
+
+  .textblock {
+    padding-left: 350px;
+    padding-right: 350px;
+    text-align: left;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+
+  .textblock {
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: left;
+
+  }
+
+  h1 {
+  font-size: 80px;
+  padding: 50 0 50 0;
+  }
+
+}
+
+@media (max-width:767px) {
+
+  .textblock {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+  }
+
+  h1 {
+  font-size: 60px;
+  line-height: 60px;
+  padding: 0 50 0 50;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 50 0 50;
+  }
+
+  .contactform {
+    font-size: 70px;
+    line-height: 73px;
+  }
+
+  header {
+    zoom: 75%;
+  }
+
+}
+
+
+.fadein  {
+  -webkit-animation: fadein 3s;
+     -moz-animation: fadein 3s;
+      -ms-animation: fadein 3s;
+       -o-animation: fadein 3s;
+          animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
